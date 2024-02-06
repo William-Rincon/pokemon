@@ -1,0 +1,181 @@
+
+/* ... (otros estilos) ... */
+body {
+    background-image: url('../img/poke.jpg');
+    background-size: contain;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: right;
+}
+
+.navbar a {
+    color: #8dbce5;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    color: #e9ff4d;
+}
+
+.pokemon-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px; /* Agregado para separar de la barra de navegación */
+}
+
+.pokemon-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px; /* Agregado para separar las cartas */
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.pokemon-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.pokemon-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.pokemon-button:hover {
+    background-color: #45a049;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagination a:hover {
+    background-color: #45a049;
+}
+
+.pagination .current {
+    background-color: #c2a3299e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content h2 {
+    color: #333;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
